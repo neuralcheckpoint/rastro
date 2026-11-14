@@ -6,6 +6,43 @@ delivery checks. It is a standalone Windows app; you do not need Nuke to run it.
 
 **During the public beta every Pro feature is free.** No license and no trial are needed.
 
+**[Download the latest release](https://github.com/neuralcheckpoint/rastro/releases/latest)** (Windows 10/11, 64-bit, about 12 MB).
+
+![Contact sheet with production status on every shot and the selected version in the inspector](docs/contact-sheet.png)
+
+## What it looks like
+
+**Every shot and version in one tree.** Rastro scans your project folders and lists shots, Nuke
+scripts and versions with production status, open to-dos and the last change. Pick a version to see
+its thumbnail, path, time worked, status note and to-dos on the right.
+
+![List view: shots, scripts and versions with status and to-dos](docs/list-view.png)
+
+**To-dos per shot or per version.** Add notes from a client call to the shot, mark them done, in
+progress or blocked, and filter the whole project in the To-do Center.
+
+![To-do Center with done, in progress and blocked to-dos](docs/todo-center.png)
+
+**A production journal.** Write what changed today, paste frames, tag entries (`#review`,
+`#seq=040`) and link shots. It stays on your machine.
+
+![Production Journal with dated entries, tags and pasted frames](docs/production-journal.png)
+
+**Every command in Ctrl+K.** Type a few words and run it, with its shortcut beside it.
+
+![Command palette searching for review commands](docs/command-palette.png)
+
+### Examples
+
+- **Morning check:** open the **Contact sheet**, filter by **Open To-dos**, and see which shots wait
+  on you and which are waiting on review.
+- **After a client note:** select the shot, type the note in **Add a to-do**, set the production
+  status to **In progress**, and log it in the **Production Journal** with a frame pasted in.
+- **Before sending a version:** select two versions (Ctrl+click) and press **C** to compare them,
+  make a **Review MP4** (M), then run the **Delivery check**.
+- **No Nuke at all:** add a folder of renders as a **Renders only** project and use Rastro to
+  browse, compare and track your movies and image sequences.
+
 ## Requirements
 
 - Windows 10 or 11, 64-bit.
@@ -87,6 +124,12 @@ Delete the Rastro folder. To also remove your Rastro data, delete the two folder
 
 - `rastro.exe`: the app (one file, no installer).
 - `EULA.md`: the license agreement for Rastro.
+- `python/`: two small helper scripts Rastro runs inside Nuke (thumbnails and script limits).
 - `LICENSES/`: licenses of the third-party software inside `rastro.exe` (also under
   **About Rastro**).
 - `SHA256SUMS.txt`: the SHA-256 of every file in this folder.
+
+## Credits
+
+Screenshots use frames from *Tears of Steel*, © Blender Foundation | mango.blender.org, licensed
+[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
