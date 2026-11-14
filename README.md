@@ -1,10 +1,10 @@
-# Rastro · public beta
+# Rastro
 
 Rastro keeps a compositor's shots in one window: every project, shot and version on disk, with
 thumbnails, to-dos, production status, a production journal, side-by-side compare, review MP4s and
 delivery checks. It is a standalone Windows app; you do not need Nuke to run it.
 
-**During the public beta every Pro feature is free.** No license and no trial are needed.
+**Rastro is free, with every feature, for personal and commercial work.** No license, account or trial.
 
 **[Download the latest release](https://github.com/neuralcheckpoint/rastro/releases/latest)** (Windows 10/11, 64-bit, about 12 MB).
 
@@ -69,7 +69,7 @@ progress or blocked, and filter the whole project in the To-do Center.
 3. Unzip it to a folder you can write to, for example `Documents\Rastro`. Do not run it from
    inside the zip.
 4. Double-click `rastro.exe`.
-5. **Windows SmartScreen** may say "Windows protected your PC", because the beta exe is not signed
+5. **Windows SmartScreen** may say "Windows protected your PC", because the exe is not signed
    yet. Click **More info** → **Run anyway**. This is asked only the first time.
 6. *(Optional)* Right-click `rastro.exe` → **Show more options** → **Send to** → **Desktop (create
    shortcut)**, or pin it to Start or the taskbar.
