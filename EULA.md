@@ -30,8 +30,7 @@ You may not:
 
 Your projects, tasks, notes, captures, reports and playlists belong to you.
 Rastro keeps them on your computer and needs no Rastro account or server.
-It sends nothing unless you use an optional sync service you configure, or
-you send a diagnostics file yourself.
+It sends nothing unless you use an optional sync service you configure.
 
 ## 5. Foundry products
 
