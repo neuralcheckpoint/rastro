@@ -13,6 +13,7 @@
   <a href="https://github.com/neuralcheckpoint/rastro/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/neuralcheckpoint/rastro?include_prereleases&label=release&color=d6a64f"></a>
   <img alt="Windows 10 and 11, 64-bit" src="https://img.shields.io/badge/Windows-10%20%7C%2011%2C%2064--bit-3a3a3a">
   <img alt="Free for personal and commercial work" src="https://img.shields.io/badge/price-free%20forever-3a3a3a">
+  <a href="https://github.com/neuralcheckpoint/rastro/releases"><img alt="Total downloads" src="https://img.shields.io/github/downloads/neuralcheckpoint/rastro/total?color=3a3a3a"></a>
 </p>
 
 <p align="center">
@@ -23,7 +24,7 @@
   <a href="#first-run">First run</a>
 </p>
 
-![Contact sheet with production status on every shot and the selected version in the inspector](docs/contact-sheet.png)
+[![Animation: clicking through the contact sheet; the inspector shows each version's preview, production status and to-dos](docs/contact-sheet.gif)](docs/contact-sheet.png)
 
 Rastro keeps a compositor's shots in one window: every project, shot and version on disk, with
 thumbnails, to-dos, production status, a production journal, side-by-side compare, review MP4s and
