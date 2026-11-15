@@ -1,4 +1,29 @@
-# Rastro
+<p align="center">
+  <img src="docs/logo.svg" width="104" height="104" alt="Rastro logo: a shot tree, with the current shot in amber">
+</p>
+
+<h1 align="center">Rastro</h1>
+
+<p align="center">
+  <b>Every shot, version and to-do of a compositor, in one window.</b><br>
+  A free Windows app for Nuke compositors. You do not need Nuke to run it.
+</p>
+
+<p align="center">
+  <a href="https://github.com/neuralcheckpoint/rastro/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/neuralcheckpoint/rastro?include_prereleases&label=release&color=d6a64f"></a>
+  <img alt="Windows 10 and 11, 64-bit" src="https://img.shields.io/badge/Windows-10%20%7C%2011%2C%2064--bit-3a3a3a">
+  <img alt="Free for personal and commercial work" src="https://img.shields.io/badge/price-free%20forever-3a3a3a">
+</p>
+
+<p align="center">
+  <a href="https://github.com/neuralcheckpoint/rastro/releases/download/v1.0.0-beta.3/rastro-1.0.0-beta.3-windows.zip"><b>Download Rastro 1.0.0-beta.3</b></a> (zip, about 14 MB)
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#install">Install</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#first-run">First run</a>
+</p>
+
+![Contact sheet with production status on every shot and the selected version in the inspector](docs/contact-sheet.png)
 
 Rastro keeps a compositor's shots in one window: every project, shot and version on disk, with
 thumbnails, to-dos, production status, a production journal, side-by-side compare, review MP4s and
@@ -16,29 +41,51 @@ delivery checks. It is a standalone Windows app; you do not need Nuke to run it.
 
 No installer, no admin rights, no account. Details in [Install](#install) below.
 
-![Contact sheet with production status on every shot and the selected version in the inspector](docs/contact-sheet.png)
-
 ## What it looks like
 
-**Every shot and version in one tree.** Rastro scans your project folders and lists shots, Nuke
-scripts and versions with production status, open to-dos and the last change. Pick a version to see
-its thumbnail, path, time worked, status note and to-dos on the right.
-
-![List view: shots, scripts and versions with status and to-dos](docs/list-view.png)
-
-**To-dos per shot or per version.** Add notes from a client call to the shot, mark them done, in
-progress or blocked, and filter the whole project in the To-do Center.
-
-![To-do Center with done, in progress and blocked to-dos](docs/todo-center.png)
-
-**A production journal.** Write what changed today, paste frames, tag entries (`#review`,
-`#seq=040`) and link shots. It stays on your machine.
-
-![Production Journal with dated entries, tags and pasted frames](docs/production-journal.png)
-
-**Every command in Ctrl+K.** Type a few words and run it, with its shortcut beside it.
-
-![Command palette searching for review commands](docs/command-palette.png)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Every shot and version in one tree.</b> Rastro scans your project folders and lists shots,
+      Nuke scripts and versions with production status, open to-dos and the last change.
+      <br><br>
+      <img src="docs/list-view.png" alt="List view: shots, scripts and versions with status and to-dos">
+    </td>
+    <td width="50%" valign="top">
+      <b>Compare two versions.</b> Pick A and B in the Review tab and drag the wipe, or switch to
+      flicker or blend. It plays the renders when there are any, the thumbnails when there are not.
+      <br><br>
+      <img src="docs/compare-wipe.gif" alt="Animation: dragging the wipe between v005 and v004 of a shot in the Review tab">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Every command in Ctrl+K.</b> Type a few letters and run it, with its shortcut beside it.
+      <br><br>
+      <img src="docs/command-palette.gif" alt="Animation: typing contact in the command palette and opening the Contact sheet">
+    </td>
+    <td width="50%" valign="top">
+      <b>Delivery check before you send.</b> Open to-dos, review status, the final Write, frame
+      range and render jobs in one list, with the action that fixes each one beside it.
+      <br><br>
+      <img src="docs/delivery-check.png" alt="Delivery check listing the issues that block delivery of a version">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <b>To-dos per shot or per version.</b> Add notes from a client call to the shot, mark them
+      done, in progress or blocked, and filter the whole project in the To-do Center.
+      <br><br>
+      <img src="docs/todo-center.png" alt="To-do Center with done, in progress and blocked to-dos">
+    </td>
+    <td width="50%" valign="top">
+      <b>A production journal.</b> Write what changed today, paste frames, tag entries
+      (<code>#review</code>, <code>#seq=040</code>) and link shots. It stays on your machine.
+      <br><br>
+      <img src="docs/production-journal.png" alt="Production Journal with dated entries, tags and pasted frames">
+    </td>
+  </tr>
+</table>
 
 ### Examples
 
@@ -155,5 +202,5 @@ Delete the Rastro folder. To also remove your Rastro data, delete the two folder
 
 ## Credits
 
-Screenshots use frames from *Tears of Steel*, © Blender Foundation | mango.blender.org, licensed
+Screenshots and animations use frames from *Tears of Steel*, © Blender Foundation | mango.blender.org, licensed
 [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
