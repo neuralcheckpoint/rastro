@@ -31,6 +31,9 @@ You may not:
 Your projects, tasks, notes, captures, reports and playlists belong to you.
 Rastro keeps them on your computer and needs no Rastro account or server.
 It sends nothing unless you use an optional sync service you configure.
+Rastro only goes to the internet when you ask it to, such as the FFmpeg download
+(Profile · Download ffmpeg) or the OCIO color config download (Profile · Download OCIO config),
+which ask for your confirmation first.
 
 ## 5. Foundry products
 

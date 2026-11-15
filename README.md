@@ -47,8 +47,11 @@ progress or blocked, and filter the whole project in the To-do Center.
 
 - Windows 10 or 11, 64-bit.
 - A GPU with DirectX 12 or Vulkan (any card from the last ~8 years, including integrated graphics).
-- Optional: [FFmpeg](https://ffmpeg.org/download.html) on your `PATH` for review MP4s, contact
-  sheets and movie thumbnails. Without it those commands say FFmpeg is missing; everything else works.
+- Optional: FFmpeg for review MP4s, contact sheets and movie thumbnails. If it isn't on your `PATH`,
+  use **Profile · Download ffmpeg** (command palette): Rastro asks first, then downloads and checks it.
+  Without it those commands say FFmpeg is missing; everything else works.
+- Color: Compare previews and review MP4s follow the script's color management (OCIO/ACES included)
+  without Nuke. A missing config can be fetched with **Profile · Download OCIO config**.
 - Optional: Nuke, only to open scripts and for the tools that run it (render queue, render quality
   check, review renders). Point Rastro to it in **Profile · Nuke executable** (command palette,
   Ctrl+K): **Detect** finds installs in `C:\Program Files\Nuke*`, or type the path to
@@ -117,8 +120,8 @@ Delete the Rastro folder. To also remove your Rastro data, delete the two folder
   or a VM without GPU acceleration Rastro may not start.
 - **A project shows no shots.** Open **Scan folders** and check that the subfolders with shots are
   ticked.
-- **Review MP4 or thumbnails fail.** Install FFmpeg and make sure `ffmpeg -version` works in a new
-  terminal.
+- **Review MP4 or thumbnails fail.** Run **Profile · Download ffmpeg**, or install FFmpeg and make
+  sure `ffmpeg -version` works in a new terminal.
 
 ## Files in this folder
 
