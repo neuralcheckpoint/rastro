@@ -6,7 +6,15 @@ delivery checks. It is a standalone Windows app; you do not need Nuke to run it.
 
 **Rastro is free, with every feature, for personal and commercial work.** No license, account or trial.
 
-**[Download the latest release](https://github.com/neuralcheckpoint/rastro/releases/latest)** (Windows 10/11, 64-bit, about 12 MB).
+**[Download Rastro 1.0.0-beta.3](https://github.com/neuralcheckpoint/rastro/releases/download/v1.0.0-beta.3/rastro-1.0.0-beta.3-windows.zip)** (Windows 10/11, 64-bit, zip of about 14 MB).
+
+**Install in 4 steps:**
+1. Download the zip above.
+2. Right-click it → **Extract All…** → choose a folder like `Documents\Rastro`.
+3. Open the extracted folder and double-click `rastro.exe`.
+4. If Windows says "Windows protected your PC", click **More info** → **Run anyway**.
+
+No installer, no admin rights, no account. Details in [Install](#install) below.
 
 ![Contact sheet with production status on every shot and the selected version in the inspector](docs/contact-sheet.png)
 
@@ -65,17 +73,30 @@ progress or blocked, and filter the whole project in the To-do Center.
 
 ## Install
 
-1. Download `rastro-<version>-windows.zip`.
-2. *(Optional)* Check the download. In PowerShell, in the download folder:
-   `Get-FileHash rastro-<version>-windows.zip -Algorithm SHA256`
-   The hash must match the one in `rastro-<version>-windows.zip.sha256`.
-3. Unzip it to a folder you can write to, for example `Documents\Rastro`. Do not run it from
-   inside the zip.
-4. Double-click `rastro.exe`.
-5. **Windows SmartScreen** may say "Windows protected your PC", because the exe is not signed
-   yet. Click **More info** → **Run anyway**. This is asked only the first time.
-6. *(Optional)* Right-click `rastro.exe` → **Show more options** → **Send to** → **Desktop (create
-   shortcut)**, or pin it to Start or the taskbar.
+Rastro is a single folder with `rastro.exe`. There is no installer and it does not need
+administrator rights.
+
+1. **Download.** Open the [release page](https://github.com/neuralcheckpoint/rastro/releases/tag/v1.0.0-beta.3), scroll to **Assets** and click
+   `rastro-1.0.0-beta.3-windows.zip`. Do not use the "Source code" links: they are not the app.
+2. **Extract.** In your Downloads folder, right-click the zip → **Extract All…**, pick a folder you
+   can write to (for example `C:\Users\<you>\Documents\Rastro`) and click **Extract**.
+   Do not run Rastro from inside the zip, and avoid `C:\Program Files` (it is read-only).
+3. **Open.** In the extracted `rastro-1.0.0-beta.3` folder, double-click `rastro.exe`.
+4. **SmartScreen.** The exe is not signed yet, so the first time Windows may show
+   "Windows protected your PC". Click **More info** → **Run anyway**. It is asked only once.
+5. **Shortcut (optional).** Right-click `rastro.exe` → **Show more options** → **Send to** →
+   **Desktop (create shortcut)**, or pin it to Start or the taskbar.
+6. **FFmpeg (optional, recommended).** Press **Ctrl+K**, type `ffmpeg` and run
+   **Profile · Download ffmpeg**. Rastro shows the source and size, asks for your OK, then downloads
+   and checks it. Skip this if FFmpeg is already on your `PATH`.
+
+**Check the download (optional).** In PowerShell, in the Downloads folder:
+
+```powershell
+Get-FileHash rastro-1.0.0-beta.3-windows.zip -Algorithm SHA256
+```
+
+The hash must match the one in `rastro-1.0.0-beta.3-windows.zip.sha256` on the release page.
 
 ## First run
 
