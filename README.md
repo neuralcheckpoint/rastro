@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/neuralcheckpoint/rastro/releases/download/v1.0.0-beta.3/rastro-1.0.0-beta.3-windows.zip"><b>Download Rastro 1.0.0-beta.3</b></a> (zip, about 14 MB)
+  <a href="https://github.com/neuralcheckpoint/rastro/releases/download/v1.0.0-beta.4/rastro-1.0.0-beta.4-windows.zip"><b>Download Rastro 1.0.0-beta.4</b></a> (zip, about 14 MB)
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#install">Install</a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -32,7 +32,7 @@ delivery checks. It is a standalone Windows app; you do not need Nuke to run it.
 
 **Rastro is free, with every feature, for personal and commercial work.** No license, account or trial.
 
-**[Download Rastro 1.0.0-beta.3](https://github.com/neuralcheckpoint/rastro/releases/download/v1.0.0-beta.3/rastro-1.0.0-beta.3-windows.zip)** (Windows 10/11, 64-bit, zip of about 14 MB).
+**[Download Rastro 1.0.0-beta.4](https://github.com/neuralcheckpoint/rastro/releases/download/v1.0.0-beta.4/rastro-1.0.0-beta.4-windows.zip)** (Windows 10/11, 64-bit, zip of about 14 MB).
 
 **Install in 4 steps:**
 1. Download the zip above.
@@ -94,6 +94,8 @@ No installer, no admin rights, no account. Details in [Install](#install) below.
   on you and which are waiting on review.
 - **After a client note:** select the shot, type the note in **Add a to-do**, set the production
   status to **In progress**, and log it in the **Production Journal** with a frame pasted in.
+- **A note on a frame:** in **Review**, use **Draw frame note** to draw on the frame and save it as
+  a to-do. Later, **Frame note** shows the drawing again and **Open** starts Nuke at that frame.
 - **Before sending a version:** select two versions (Ctrl+click) and press **C** to compare them,
   make a **Review MP4** (M), then run the **Delivery check**.
 - **No Nuke at all:** add a folder of renders as a **Renders only** project and use Rastro to
@@ -124,12 +126,12 @@ No installer, no admin rights, no account. Details in [Install](#install) below.
 Rastro is a single folder with `rastro.exe`. There is no installer and it does not need
 administrator rights.
 
-1. **Download.** Open the [release page](https://github.com/neuralcheckpoint/rastro/releases/tag/v1.0.0-beta.3), scroll to **Assets** and click
-   `rastro-1.0.0-beta.3-windows.zip`. Do not use the "Source code" links: they are not the app.
+1. **Download.** Open the [release page](https://github.com/neuralcheckpoint/rastro/releases/tag/v1.0.0-beta.4), scroll to **Assets** and click
+   `rastro-1.0.0-beta.4-windows.zip`. Do not use the "Source code" links: they are not the app.
 2. **Extract.** In your Downloads folder, right-click the zip → **Extract All…**, pick a folder you
    can write to (for example `C:\Users\<you>\Documents\Rastro`) and click **Extract**.
    Do not run Rastro from inside the zip, and avoid `C:\Program Files` (it is read-only).
-3. **Open.** In the extracted `rastro-1.0.0-beta.3` folder, double-click `rastro.exe`.
+3. **Open.** In the extracted `rastro-1.0.0-beta.4` folder, double-click `rastro.exe`.
 4. **SmartScreen.** The exe is not signed yet, so the first time Windows may show
    "Windows protected your PC". Click **More info** → **Run anyway**. It is asked only once.
 5. **Shortcut (optional).** Right-click `rastro.exe` → **Show more options** → **Send to** →
@@ -141,10 +143,10 @@ administrator rights.
 **Check the download (optional).** In PowerShell, in the Downloads folder:
 
 ```powershell
-Get-FileHash rastro-1.0.0-beta.3-windows.zip -Algorithm SHA256
+Get-FileHash rastro-1.0.0-beta.4-windows.zip -Algorithm SHA256
 ```
 
-The hash must match the one in `rastro-1.0.0-beta.3-windows.zip.sha256` on the release page.
+The hash must match the one in `rastro-1.0.0-beta.4-windows.zip.sha256` on the release page.
 
 ## First run
 
